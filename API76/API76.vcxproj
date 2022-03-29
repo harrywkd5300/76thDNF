@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{450F56A2-589F-4A93-9E33-1DE2A52579A0}</ProjectGuid>
+    <RootNamespace>API76</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Visual Leak Detector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Administrator\Desktop\76thDNF\API76\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Abract.h" />
+    <ClInclude Include="API76.h" />
+    <ClInclude Include="AuarShield.h" />
+    <ClInclude Include="BmpMgr.h" />
+    <ClInclude Include="Bomb.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="BossDG.h" />
+    <ClInclude Include="BossHpBar.h" />
+    <ClInclude Include="BossSkill1.h" />
+    <ClInclude Include="BossSkill2.h" />
+    <ClInclude Include="Buster.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="Constant.h" />
+    <ClInclude Include="CSkillMgr.h" />
+    <ClInclude Include="define.h" />
+    <ClInclude Include="DGDoor.h" />
+    <ClInclude Include="DGSelect.h" />
+    <ClInclude Include="Dungeon1.h" />
+    <ClInclude Include="Dungeon2.h" />
+    <ClInclude Include="EffectMgr.h" />
+    <ClInclude Include="enum.h" />
+    <ClInclude Include="Explosion.h" />
+    <ClInclude Include="extern.h" />
+    <ClInclude Include="fireball.h" />
+    <ClInclude Include="Firewall.h" />
+    <ClInclude Include="function.h" />
+    <ClInclude Include="Functor.h" />
+    <ClInclude Include="HpBar.h" />
+    <ClInclude Include="Include.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="KeyMgr.h" />
+    <ClInclude Include="Logo.h" />
+    <ClInclude Include="MaigicArrow.h" />
+    <ClInclude Include="Maingame.h" />
+    <ClInclude Include="MathMgr.h" />
+    <ClInclude Include="Monster1.h" />
+    <ClInclude Include="Monster2.h" />
+    <ClInclude Include="Monster3.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="MyBitmap.h" />
+    <ClInclude Include="MyButton.h" />
+    <ClInclude Include="MyEdit.h" />
+    <ClInclude Include="MyMenu.h" />
+    <ClInclude Include="NightHallow.h" />
+    <ClInclude Include="Npc.h" />
+    <ClInclude Include="Obj.h" />
+    <ClInclude Include="ObjMgr.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneMgr.h" />
+    <ClInclude Include="Shop.h" />
+    <ClInclude Include="SkillIcon.h" />
+    <ClInclude Include="SoundMgr.h" />
+    <ClInclude Include="Spark.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="Stage2.h" />
+    <ClInclude Include="StateHp.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="struct.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Thunder.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="TileMgr.h" />
+    <ClInclude Include="typedef.h" />
+    <ClInclude Include="Uibase.h" />
+    <ClInclude Include="Uimgr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="API76.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="API76.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="API76.cpp" />
+    <ClCompile Include="AuarShield.cpp" />
+    <ClCompile Include="BmpMgr.cpp" />
+    <ClCompile Include="Bomb.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="BossDG.cpp" />
+    <ClCompile Include="BossHpBar.cpp" />
+    <ClCompile Include="BossSkill1.cpp" />
+    <ClCompile Include="BossSkill2.cpp" />
+    <ClCompile Include="Buster.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="CSkillMgr.cpp" />
+    <ClCompile Include="DGDoor.cpp" />
+    <ClCompile Include="DGSelect.cpp" />
+    <ClCompile Include="Dungeon1.cpp" />
+    <ClCompile Include="Dungeon2.cpp" />
+    <ClCompile Include="EffectMgr.cpp" />
+    <ClCompile Include="Explosion.cpp" />
+    <ClCompile Include="fireball.cpp" />
+    <ClCompile Include="Firewall.cpp" />
+    <ClCompile Include="HpBar.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="KeyMgr.cpp" />
+    <ClCompile Include="Logo.cpp" />
+    <ClCompile Include="MaigicArrow.cpp" />
+    <ClCompile Include="Maingame.cpp" />
+    <ClCompile Include="MathMgr.cpp" />
+    <ClCompile Include="Monster1.cpp" />
+    <ClCompile Include="Monster2.cpp" />
+    <ClCompile Include="Monster3.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="MyBitmap.cpp" />
+    <ClCompile Include="MyButton.cpp" />
+    <ClCompile Include="MyEdit.cpp" />
+    <ClCompile Include="MyMenu.cpp" />
+    <ClCompile Include="NightHallow.cpp" />
+    <ClCompile Include="Npc.cpp" />
+    <ClCompile Include="Obj.cpp" />
+    <ClCompile Include="ObjMgr.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneMgr.cpp" />
+    <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="SkillIcon.cpp" />
+    <ClCompile Include="SoundMgr.cpp" />
+    <ClCompile Include="Spark.cpp" />
+    <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="Stage2.cpp" />
+    <ClCompile Include="StateHp.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Thunder.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="TileMgr.cpp" />
+    <ClCompile Include="Uibase.cpp" />
+    <ClCompile Include="Uimgr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
